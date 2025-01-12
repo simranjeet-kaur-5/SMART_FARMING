@@ -54,8 +54,8 @@ def get_pests_for_crop(crop_name):
 
 # Function to fetch pest images from Google Custom Search
 def get_pest_image_from_google(pest_name):
-    api_key = "AIzaSyA-Ml_os2XGlF2KAcH9MwhvaQZmGqR4nn4"  # Replace with your API key from Google Cloud Console
-    cse_id = "b580ae8722ce34ef2"  # Replace with your Custom Search Engine ID
+    api_key = "ABCD"  # Replace with your API key from Google Cloud Console
+    cse_id = "ABCD"  # Replace with your Custom Search Engine ID
 
     url = f"https://www.googleapis.com/customsearch/v1?q={pest_name}&searchType=image&key={api_key}&cx={cse_id}"
 
@@ -178,7 +178,7 @@ def recommend_crop_and_fertilizer(soil_type, ph, temperature, humidity):
 def main():
     print("Welcome to the Crop Recommendation and Fertilizer Suggestion System!")
 
-    api_key = "2813da52abdbd908326a6228868796be"  # Replace with your OpenWeatherMap API key
+    api_key = "ABCD"  # Replace with your OpenWeatherMap API key
     city_name = input("Enter your city name: ").strip()
 
     weather_data = get_weather(city_name, api_key)
